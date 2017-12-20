@@ -6,6 +6,6 @@ mongoose.Promise = global.Promise;
 //   mlab:'mongodb://<Ankit>:<Ankit>@ds115035.mlab.com:15035/todoappdeployment'
 // };
 //MONGODB_URI='mongodb://<Ankit>:<Ankit>@ds115035.mlab.com:15035/todoappdeployment'
-mongoose.connect((process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp'),{ useMongoClient: true } );
+mongoose.connect((process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp') );
 
 module.exports={mongoose};
